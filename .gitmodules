@@ -1,0 +1,3 @@
+[submodule "PySepaDD"]
+	path = PySepaDD
+	url = https://github.com/mfiedler/PySepaDD.git
