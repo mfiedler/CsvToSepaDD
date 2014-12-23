@@ -206,8 +206,8 @@ if __name__ == '__main__':
     convertParser = subparsers.add_parser('convert', help='convert a CSV file to a SEPA XML file')
     convertParser.set_defaults(func=csvToSepa)
     convertParser.add_argument('config', help='configuration file to use')
-    convertParser.add_argument('input', help='input file or - for stdin')
-    convertParser.add_argument('output', help='output file or - for stdout')
+    convertParser.add_argument('input', help='input file')
+    convertParser.add_argument('output', help='output file')
 
     args = parser.parse_args()
     args.func(args)
